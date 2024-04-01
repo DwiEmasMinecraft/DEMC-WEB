@@ -1,0 +1,57 @@
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 35vw;
+    top: 35vh;
+    /* transform: translate(50%, 50%); */
+    background-color: var(--accent-1);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--accent);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    width: 25vw;
+    height: 25vh;
+}
+
+form input {
+    background-color: var(--background);
+    color: var(--text);
+    width: 62%;
+    padding: 10px 32px;
+    margin: 10px 0;
+    border: 0;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s all;
+}
+
+form input:focus {
+    outline: var(--accent-3) solid 1px;
+}
+
+form button {
+    background-color: var(--accent);
+    color: var(--text);
+    width: 75%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s all;
+}
+
+form button:hover {
+    outline: var(--accent-3) solid 1px;
+    background-color: var(--background)
+}
+
+#username {
+    background: url('http://localhost:3000/cdn/icons/light/Profile.svg') no-repeat scroll 6px 6px, var(--background);
+}
+
+#password {
+    background: url('http://localhost:3000/cdn/icons/light/Password.svg') no-repeat scroll 6px 6px, var(--background);
+}

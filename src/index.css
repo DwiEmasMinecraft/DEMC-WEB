@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Torus Pro';
+  src: local('Torus Pro'), url(http://localhost:3000/cdn/fonts/TorusPro.ttf) format('truetype');
+}
+
+:root {
+  font-family: 'Torus Pro';
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition: ease-in-out 0.3s;
+}
+
+/* Color Scheme */
+
+@media (prefers-color-scheme: light) {
+  :root {
+
+    /* Light */
+    --background: #a18754;
+    --accent: #b5985f;
+    --accent-1: #caa96a;
+    --accent-2: #8d764a;
+    --accent-3: #79653f;
+    --accent-alt: #bbb;
+
+    --text: #fff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    /* Dark */
+    --background: #79653f;
+    --accent: #8d764a;
+    --accent-1: #a18754;
+    --accent-2: #b5985f;
+    --accent-3: #caa96a;
+    --accent-alt: #aaa;
+
+    --text: #fff;
+  }
+}
